@@ -10,6 +10,9 @@ import { TemplateTodoFormComponent } from './_template/template-todo-form/templa
 import { TemplateHeaderComponent } from './_template/template-header/template-header.component';
 
 import { DragulaModule } from 'ng2-dragula';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -20,10 +23,12 @@ import { DragulaModule } from 'ng2-dragula';
     TemplateHeaderComponent,
   ],
   imports: [
+    MatSliderModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    DragulaModule.forRoot()
+    DragulaModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
