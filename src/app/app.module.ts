@@ -17,7 +17,7 @@ import { DragulaModule } from 'ng2-dragula';
     PageListComponent,
     TemplateTodoComponent,
     TemplateTodoFormComponent,
-    TemplateHeaderComponent
+    TemplateHeaderComponent,
   ],
   imports: [
     BrowserModule,

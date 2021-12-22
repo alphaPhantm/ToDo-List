@@ -1,34 +1,3 @@
 {
-  "todo": [
-    {
-      "label": "Hallo",
-      "status": true,
-      "position": 1,
-      "id": 1
-    },
-    {
-      "label": "sad",
-      "status": false,
-      "position": 3,
-      "id": 12
-    },
-    {
-      "label": "sa",
-      "status": false,
-      "position": 4,
-      "id": 13
-    },
-    {
-      "label": "d",
-      "status": false,
-      "position": 5,
-      "id": 14
-    },
-    {
-      "label": "asd",
-      "status": true,
-      "position": 6,
-      "id": 15
-    }
-  ]
+  "todo": []
 }
