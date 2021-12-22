@@ -8,7 +8,7 @@ import { Todo } from '../_interface/todo';
 })
 export class DataService {
 
-  private serverURL = 'http://localhost:3000'
+  private serverURL = 'http://172.26.25.230:3000'
 
   constructor(
     private _http: HttpClient

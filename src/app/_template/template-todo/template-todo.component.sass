@@ -2,13 +2,14 @@
 
 .todo
   width: 100%
-  background-color: $white
-  margin: 0 0 $cube 0
+  background-color: $background
+  margin: 0 0 $cube*2 0
   display: flex
   flex-flow: row
   justify-content: space-between
   align-items: stretch
   height: 100%
+  box-shadow: 1px 6px 11px #000000
   .todo-content
     width: 100%
     display: flex
@@ -40,10 +41,11 @@
     .todo-content-title
       width: 100%
       input
-        font-family: $font2
+        font-family: "Segoe UI Light", sans-serif
         font-size: $cube*2
         padding: $cube*2
-        color: $second
+        color: $white
+        background-color: $background
         width: 100%
         border: none
         word-break: break-word
@@ -53,19 +55,14 @@
       input:focus
         outline: none
   .delete
-    background-color: $red
     color: $white
-    font-family: $font2
+    font-family: "Segoe UI Light", sans-serif
     font-size: $cube*2
     padding: $cube*2
     cursor: pointer
-    span
-      height: 100%
-      width: 100%
-      display: flex
-      flex-flow: row
-      justify-content: center
-      align-items: center
+    img
+      width: $cube*4
+      height: $cube*4
 
 .todo.done
   .todo-content

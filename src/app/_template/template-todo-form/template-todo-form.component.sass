@@ -2,13 +2,14 @@
 
 .todo-form
   width: 100%
-  background-color: $white
+  background-color: $background
   margin: 0 0 $cube*2 0
   display: flex
   flex-flow: row
   justify-content: space-between
   align-items: stretch
   height: $cube*8
+  box-shadow: 1px 6px 11px #000000
   .todo-content
     width: 100%
     display: flex
@@ -16,32 +17,26 @@
     justify-content: flex-start
     align-items: stretch
     input
-      font-family: $font2
+      font-family: "Segoe UI Light", sans-serif
       font-size: $cube*2
       padding: $cube*2
-      color: $second
-      background-color: $white
+      color: $white
+      background-color: $background
       width: 100%
       border: none
       word-break: break-word
     input::placeholder
       opacity: 0.5
       font-style: italic
-      color: $second
+      color: $grey
     input:focus
       outline: none
   .create
-    color: $white
-    font-family: $font2
+    color: $background
+    font-family: "Segoe UI Light", sans-serif
     font-size: $cube*2
     padding: $cube*2
     cursor: pointer
-    //border-left: solid $cube*0.1 $second
-    background-color: $prime
-    span
-      height: 100%
-      width: 100%
-      display: flex
-      flex-flow: row
-      justify-content: center
-      align-items: center
+    img
+      width: $cube*4
+      height: $cube*4
