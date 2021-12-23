@@ -2,7 +2,7 @@
 
 .todo-form
   width: 100%
-  background-color: $background
+  background-color: var(--background)
   margin: 0 0 $cube*2 0
   display: flex
   flex-flow: row
@@ -20,19 +20,19 @@
       font-family: "Segoe UI Light", sans-serif
       font-size: $cube*2
       padding: $cube*2
-      color: $white
-      background-color: $background
+      color: var(--white)
+      background-color: var(--background)
       width: 100%
       border: none
       word-break: break-word
     input::placeholder
       opacity: 0.5
       font-style: italic
-      color: $grey
+      color: var(--grey)
     input:focus
       outline: none
   .create
-    color: $background
+    color: var(--background)
     font-family: "Segoe UI Light", sans-serif
     font-size: $cube*2
     padding: $cube*2

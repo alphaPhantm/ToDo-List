@@ -1,3 +1,11 @@
 <header>
   <h1>Do<br><span>Your</span><br>Stuff</h1>
+  <div>
+    <input type="checkbox" class="checkbox" id="chk" (click)="toggleTheme($event)">
+    <label class="label" for="chk">
+      <fa-icon class="fa-moon" [icon]="faMoon"></fa-icon>
+      <fa-icon class="fa-sun" [icon]="faSun"></fa-icon>
+      <div class="ball"></div>
+    </label>
+  </div>
 </header>

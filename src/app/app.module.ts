@@ -13,6 +13,7 @@ import { DragulaModule } from 'ng2-dragula';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSliderModule } from '@angular/material/slider';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatSliderModule } from '@angular/material/slider';
     FormsModule,
     HttpClientModule,
     DragulaModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

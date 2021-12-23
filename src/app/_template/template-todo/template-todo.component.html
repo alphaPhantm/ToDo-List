@@ -1,7 +1,27 @@
 <div class="todo" [class.done]="toDo$.status">
   <div class="todo-content">
     <div class="handle">
-      <img src="./assets/svg/drag.svg" alt="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 164.74">
+        <defs>
+          <style>.cls-1 {
+            fill: #121212;
+          }</style>
+        </defs>
+        <g id="Ebene_2" data-name="Ebene 2">
+          <g id="Ebene_1-2" data-name="Ebene 1">
+            <g id="Gruppe_4" data-name="Gruppe 4">
+              <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="19.38" cy="19.38" r="19.38"/>
+              <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-1" cx="19.38" cy="82.37" r="19.38"/>
+              <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-1" cx="19.38" cy="145.35" r="19.38"/>
+            </g>
+            <g id="Gruppe_5" data-name="Gruppe 5">
+              <circle id="Ellipse_1-2" data-name="Ellipse 1-2" class="cls-1" cx="80.62" cy="19.38" r="19.38"/>
+              <circle id="Ellipse_2-2" data-name="Ellipse 2-2" class="cls-1" cx="80.62" cy="82.37" r="19.38"/>
+              <circle id="Ellipse_3-2" data-name="Ellipse 3-2" class="cls-1" cx="80.62" cy="145.35" r="19.38"/>
+            </g>
+          </g>
+        </g>
+      </svg>
     </div>
     <div class="todo-content-check">
       <img *ngIf="!toDo$.status" (click)="changeCheck($event)" src="./assets/svg/checkbox-empty.svg" alt="">

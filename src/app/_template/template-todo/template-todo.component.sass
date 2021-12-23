@@ -2,14 +2,14 @@
 
 .todo
   width: 100%
-  background-color: $background
+  background-color: var(--background)
   margin: 0 0 $cube*2 0
   display: flex
   flex-flow: row
   justify-content: space-between
   align-items: stretch
   height: 100%
-  box-shadow: 1px 6px 11px #000000
+  box-shadow: 1px 6px 11px var(--shadow)
   .todo-content
     width: 100%
     display: flex
@@ -17,7 +17,7 @@
     justify-content: flex-start
     align-items: center
     .handle
-      background-color: $prime
+      background-color: var(--prime)
       height: 100%
       display: flex
       flex-flow: row
@@ -25,9 +25,11 @@
       justify-content: center
       align-items: center
       cursor: grab
-      img
+      svg
         width: $cube*2
         height: $cube*2
+        .cls-1
+          fill: var(--background)
     .todo-content-check
       display: flex
       flex-flow: row
@@ -44,8 +46,8 @@
         font-family: "Segoe UI Light", sans-serif
         font-size: $cube*2
         padding: $cube*2
-        color: $white
-        background-color: $background
+        color: var(--white)
+        background-color: var(--background)
         width: 100%
         border: none
         word-break: break-word
@@ -55,7 +57,7 @@
       input:focus
         outline: none
   .delete
-    color: $white
+    color: var(--white)
     font-family: "Segoe UI Light", sans-serif
     font-size: $cube*2
     padding: $cube*2
